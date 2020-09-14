@@ -1,5 +1,5 @@
 **Profile Editor Application**
- Basic profile editor application in Ionic and Angular.
+ - Basic profile editor application in Ionic and Angular.
 
 **Commands to run project**
 - ionic serve

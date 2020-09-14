@@ -1,5 +1,7 @@
 {
   "name": "profile-editor",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

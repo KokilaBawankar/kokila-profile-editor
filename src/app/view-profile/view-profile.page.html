@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button [defaultHref]="['/', 'home']"></ion-back-button>
+        </ion-buttons>
+        <ion-title>View Profile</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label>Full Name</ion-label>
+                    <span>{{profileDetails?.firstName + ' ' + profileDetails?.lastName}}</span>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label>Date of Birth</ion-label>
+                    <span>{{profileDetails?.dob | date : 'dd MMM yyyy'}}</span>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label>Gender</ion-label>
+                    <span>{{profileDetails?.gender}}</span>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
